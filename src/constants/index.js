@@ -284,32 +284,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Company A',
-    pos: 'Senior Developer',
-    duration: '2022 - Present',
+    name: 'Asterix Studio',
+    pos: 'Founder & Frontend Developer',
+    duration: 'Jan 2024 - Present',
     title:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    icon: '/assets/framer.svg',
+      'Leading end-to-end digital product development — combining UI/UX design, modern frontend engineering, and digital strategy. Delivered multiple projects using Next.js, React, Figma, and Tailwind while also driving brand growth through strategic content (1.1M+ IG reach, TikTok 100K+ engagement, YouTube monetized).',
+    icon: '/assets/asterix.svg',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Company B',
-    pos: 'Developer',
-    duration: '2020 - 2022',
+    name: 'BANTU',
+    pos: 'UI/UX Designer (Internship)',
+    duration: 'Mar 2025 - Jun 2025',
     title:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    icon: '/assets/figma.svg',
+      'Designed interfaces for landing pages, dashboards, and company platforms using Figma. Developed scalable design systems and collaborated with cross-functional teams to improve user experience and brand consistency. Awarded Top Intern for performance and contribution.',
+    icon: '/assets/bantu.jfif',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Company C',
-    pos: 'Junior Developer',
-    duration: '2019 - 2020',
+    name: 'PT. Kusuma Kreasi Utama',
+    pos: 'Digital Content & Event Organizer',
+    duration: 'Feb 2020 - Mar 2020',
     title:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-    icon: '/assets/notion.svg',
+      'Produced digital content, managed small-scale events, and coordinated vendor communication. Specialized in copywriting and audience-focused content execution, resulting in improved engagement and brand communication quality.',
+    icon: '/assets/kusuma.png',
     animation: 'salute',
   },
 ];
