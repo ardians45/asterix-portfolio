@@ -1,10 +1,8 @@
 import { Suspense, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
-import Developer from '../components/Developer.jsx';
+import DeveloperCanvas from '../components/DeveloperCanvas.jsx';
 import { workExperiences } from '../constants/index.js';
-import CanvasLoader from "../components/CanvasLoader.jsx";
 
 const Experience = () => {
     const [animationName, setAnimationName] = useState('idle');
@@ -16,16 +14,9 @@ const Experience = () => {
 
                 <div className="work-container">
                     <div className="work-canvas">
-                        <Canvas>
-                            <ambientLight intensity={1.5} />
-                            <spotLight position={[10, 10, 0]} angle={0.15} penumbra={1}/>
-                            <directionalLight position={[10, 10, 20]} intensity={1} />
-                            <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
-
-                            <Suspense fallback={<CanvasLoader />}>
-                                <Developer position-y={-3} scale={3} animationName={animationName} />
-                            </Suspense>
-                        </Canvas>
+                        <div className="h-full w-full">
+                            <DeveloperCanvas animationName={animationName} />
+                        </div>
                     </div>
 
                     <div className="work-content">
