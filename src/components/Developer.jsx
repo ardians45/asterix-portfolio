@@ -24,7 +24,11 @@ const Developer = ({animationName = 'idle', ...props}) => {
     useEffect(() => {
         if (actions && actions[animationName]) {
             actions[animationName].reset().fadeIn(0.5).play();
-            return () => actions[animationName].fadeOut(0.5);
+            return () => {
+                if (actions[animationName] && typeof actions[animationName].fadeOut === 'function') {
+                    actions[animationName].fadeOut(0.5);
+                }
+            };
         }
     }, [animationName, actions]);
 
