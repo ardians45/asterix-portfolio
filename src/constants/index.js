@@ -24,45 +24,45 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
+    name: 'Rizky Pratama',
+    position: 'Founder • GOGO Grocery',
     img: 'assets/review1.png',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Ardian mampu menerjemahkan ide kami menjadi desain yang modern, mudah digunakan, dan sesuai kebutuhan pasar. Komunikasi jelas dan pengerjaan tepat waktu. Sangat direkomendasikan!',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
+    name: 'Sarah Anggraeni',
+    position: 'Owner • Cactastic Marketplace',
     img: 'assets/review2.png',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Desain UI/UX yang dibuat Ardian sangat detail dan estetik. Ia juga memberikan saran strategis terkait user flow sehingga aplikasi lebih mudah dipahami pengguna.',
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech',
+    name: 'Michael Santoso',
+    position: 'Project Lead • Mending Rental',
     img: 'assets/review3.png',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Pengembangan desain sangat memuaskan. Ardian proaktif dalam berdiskusi dan memberikan solusi ketika menemukan tantangan dalam project. Hasil akhir sesuai ekspektasi.',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
+    name: 'BANTU Startup Team',
+    position: 'Internal Review',
     img: 'assets/review4.png',
     review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Sebagai intern, Ardian memberikan kontribusi yang signifikan dalam pengembangan desain website dan dashboard. Workflow rapi, desain konsisten, dan mudah diimplementasikan ke development.',
   },
 ];
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+    title: 'GOGO Grocery – Mobile Shopping Experience',
+    desc: 'A mobile-first e-commerce experience designed to simplify daily shopping. The interface focuses on clarity, accessibility, and fast navigation.',
     subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+      'Built with modern UI/UX principles including wireframing, design system consistency, and prototype validation to ensure a smooth user experience.',
+    href: '#',
     texture: '/textures/project/project1.mp4',
     logo: '/assets/project-logo1.png',
     logoStyle: {
@@ -95,11 +95,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    title: 'Cactastic – Specialty Marketplace Platform',
+    desc: 'A niche marketplace designed for cactus enthusiasts. The interface highlights product aesthetics and helps users explore collections with ease.',
     subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+      'Designed with a modular layout, consistent visual hierarchy, and scalable components to support future development.',
+    href: '#',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/project-logo2.png',
     logoStyle: {
@@ -132,11 +132,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
+    title: 'Mending Rental – Motorcycle Rental Platform',
+    desc: 'A web-based platform that simplifies motorcycle rental by providing a structured booking flow, user dashboard, and streamlined rental process.',
     subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
+      'Focused on improving usability with clear step-by-step booking, responsive layout, and a clean dashboard experience.',
+    href: '#',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
     logoStyle: {
@@ -171,11 +171,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'BANTU Platform – Website & Admin Dashboard',
+    desc: 'A complete website and dashboard interface designed for operational workflows. Includes landing page, company profile, and role-based admin dashboard.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+      'Design focused on brand consistency, clean component structure, and improved UX based on feedback and internal testing.',
+    href: '#',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
@@ -208,11 +208,11 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
+    title: 'Asterix Studio Portfolio & Branding',
+    desc: 'A personal portfolio showcasing UI/UX work, web development projects, and case studies with a focus on clean aesthetics and strong visual storytelling.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
+      'Built with modular components, responsive typography, and well-structured animation transitions to create a polished experience.',
+    href: '#',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
     logoStyle: {
@@ -241,6 +241,80 @@ export const myProjects = [
         id: 4,
         name: 'Framer Motion',
         path: '/assets/framer.png',
+      },
+    ],
+  },
+  {
+    title: 'CareerConnect - Student Career & Academic Platform',
+    desc: 'A web platform designed to help students access career guidance, academic tracking, and school activity information in a more centralized and user-friendly interface.',
+    subdesc:
+      'Developed with a clean front-end architecture, responsive layout, and dynamic components to support scalability and future integration with authentication and database systems.',
+    href: 'https://career-connect-pkm.vercel.app',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/project-logo5.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Framer Motion',
+        path: '/assets/framer.png',
+      },
+    ],
+  },
+  {
+    title: 'Rapor Lamaholot - Online Report System for Schools',
+    desc: 'A custom-built web app designed for Sekolah Dasar Lamaholot to manage student grades, role-based user access, and automated report generation. The system helps streamline academic administration and ensures students and teachers can access data efficiently.',
+    subdesc:
+      'Developed with PHP Native, MySQL, Bootstrap, and FPDF, this project includes authentication layers, CRUD functionality, PDF report generation, and a fully responsive UI accessible across devices.',
+    href: 'http://raporlamaholot.kesug.com',
+    texture: '/textures/project/project5.mp4',
+    logo: '/assets/project-logo5.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'PHP',
+        path: '/assets/php-logo.svg',
+      },
+      {
+        id: 2,
+        name: 'MySQL',
+        path: '/assets/mysql-logo.svg',
+      },
+      {
+        id: 3,
+        name: 'Bootstrap',
+        path: '/assets/bootstrap-logo.svg',
+      },
+      {
+        id: 4,
+        name: 'FPDF',
+        path: '/assets/pdf-icon.svg',
       },
     ],
   },
