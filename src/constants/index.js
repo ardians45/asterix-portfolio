@@ -58,6 +58,43 @@ export const clientReviews = [
 
 export const myProjects = [
   {
+    title: 'CareerConnect - Student Career & Academic Platform',
+    desc: 'A web platform designed to help students access career guidance, academic tracking, and school activity information in a more centralized and user-friendly interface.',
+    subdesc:
+      'Developed with a clean front-end architecture, responsive layout, and dynamic components to support scalability and future integration with authentication and database systems.',
+    href: 'https://career-connect-pkm.vercel.app',
+    texture: '/textures/project/career-connect.mp4',
+    logo: '/assets/logo-cc.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Docker',
+        path: '/assets/docker.png',
+      },
+    ],
+  },
+  {
     title: 'GOGO Grocery – Mobile Shopping Experience',
     desc: 'A mobile-first e-commerce experience designed to simplify daily shopping. The interface focuses on clarity, accessibility, and fast navigation.',
     subdesc:
@@ -244,50 +281,14 @@ export const myProjects = [
       },
     ],
   },
-  {
-    title: 'CareerConnect - Student Career & Academic Platform',
-    desc: 'A web platform designed to help students access career guidance, academic tracking, and school activity information in a more centralized and user-friendly interface.',
-    subdesc:
-      'Developed with a clean front-end architecture, responsive layout, and dynamic components to support scalability and future integration with authentication and database systems.',
-    href: 'https://career-connect-pkm.vercel.app',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
-    logoStyle: {
-      backgroundColor: '#1C1A43',
-      border: '0.2px solid #252262',
-      boxShadow: '0px 0px 60px 0px #635BFF4D',
-    },
-    spotlight: '/assets/spotlight5.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
+
   {
     title: 'Rapor Lamaholot - Online Report System for Schools',
     desc: 'A custom-built web app designed for Sekolah Dasar Lamaholot to manage student grades, role-based user access, and automated report generation. The system helps streamline academic administration and ensures students and teachers can access data efficiently.',
     subdesc:
       'Developed with PHP Native, MySQL, Bootstrap, and FPDF, this project includes authentication layers, CRUD functionality, PDF report generation, and a fully responsive UI accessible across devices.',
     href: 'http://raporlamaholot.kesug.com',
-    texture: '/textures/project/project5.mp4',
+    texture: '/textures/project/rapor.mp4',
     logo: '/assets/project-logo5.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
@@ -332,16 +333,16 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       ? [5, -5, 0]
       : [9, -5.5, 0],
     reactLogoPosition: isSmall
-      ? [3, 4, 0]
+      ? [1, 2, 0]
       : isMobile
-      ? [5, 4, 0]
+      ? [3, 2, 0]
       : isTablet
       ? [5, 4, 0]
       : [12, 3, 0],
     ringPosition: isSmall
-      ? [-5, 7, 0]
+      ? [-7, 5, 0]
       : isMobile
-      ? [-10, 10, 0]
+      ? [-12, 8, 0]
       : isTablet
       ? [-12, 10, 0]
       : [-24, 10, 0],

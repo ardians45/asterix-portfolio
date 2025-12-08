@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera, Ring } from '@react-three/drei';
-import HackerRoom from '../components/HackerRoom.jsx';
+import { PerspectiveCamera, Ring, OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants/index.js';
@@ -12,6 +11,7 @@ import Rings from '../components/Rings.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import Button from '../components/Button.jsx';
 import { Link } from 'react-scroll';
+import NewModel from '../components/NewModel.jsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: '(max-width: 440px)' });
@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen w-full flex flex-col relative">
       <div className="w-full mx-auto flex flex-col items-center sm:mt-36 mt-20 px-5 gap-4">
-        <p className="text-center font-generalsans">
+        <p className="text-center font-generalsans relative z-10">
           {/* Headline Besar dengan Gradient */}
           <span className="block text-5xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 mb-2">
             Asterix
@@ -47,13 +47,16 @@ const Hero = () => {
           <Canvas className="w-full h-full">
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
-              <HeroCamera isMobile={isMobile}>
-                <HackerRoom
-                  position={sizes.deskPosition}
-                  rotation={[0, -Math.PI, 0]}
-                  scale={sizes.deskScale}
-                />
-              </HeroCamera>
+              <NewModel
+                position={isMobile ? [0, -2, 0] : [0, -2, 0]}
+                rotation={[0, -Math.PI / 2, 0]}
+                scale={isMobile ? [0.005, 0.005, 0.005] : [0.012, 0.012, 0.012]}
+              />
+              <OrbitControls
+                enableZoom={true}
+                enablePan={true}
+                enableRotate={true}
+              />
               <group>
                 <Target position={sizes.targetPosition} />
                 <ReactLogo position={sizes.reactLogoPosition} />
