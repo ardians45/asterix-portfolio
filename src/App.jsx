@@ -1,25 +1,31 @@
-import React from 'react'
-import Navbar from './sections/Navbar'
+import React, { Suspense, lazy } from 'react';
+import Navbar from './sections/Navbar';
 import Hero from "./sections/Hero.jsx";
-import About from "./sections/About.jsx";
-import Projects from "./sections/Projects.jsx";
-import Clients from "./sections/Clients.jsx";
-import Contact from "./sections/Contact.jsx";
-import Footer from "./sections/Footer.jsx";
-import Experience from "./sections/Experience.jsx";
+
+// Lazy load sections that are not immediately visible
+const About = lazy(() => import("./sections/About.jsx"));
+const Projects = lazy(() => import("./sections/Projects.jsx"));
+const Clients = lazy(() => import("./sections/Clients.jsx"));
+const Contact = lazy(() => import("./sections/Contact.jsx"));
+const Footer = lazy(() => import("./sections/Footer.jsx"));
+const Experience = lazy(() => import("./sections/Experience.jsx"));
 
 const App = () => {
     return (
         <main className="max-x-7xl mx-auto">
             <Navbar/>
             <Hero />
-            <About />
-            <Projects />
-            <Clients />
-            <Experience/>
-            <Contact/>
-            <Footer/>
+            
+            {/* Suspense wrapper for lazy loaded components */}
+            <Suspense fallback={<div className="flex justify-center items-center py-20"><span className="text-white">Loading...</span></div>}>
+                <About />
+                <Projects />
+                <Clients />
+                <Experience/>
+                <Contact/>
+                <Footer/>
+            </Suspense>
         </main>
     )
 }
-export default App
+export default App;

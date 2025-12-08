@@ -44,7 +44,7 @@ const Hero = () => {
 
         <div className="w-full h-full absolute inset-0">
           {/*<Leva/>*/}
-          <Canvas className="w-full h-full">
+          <Canvas className="w-full h-full" dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
             <Suspense fallback={<CanvasLoader />}>
               <PerspectiveCamera makeDefault position={[0, 0, 20]} />
               <NewModel
