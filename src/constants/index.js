@@ -364,7 +364,7 @@ export const workExperiences = [
     duration: 'Jan 2024 - Present',
     title:
       'Leading end-to-end digital product development — combining UI/UX design, modern frontend engineering, and digital strategy. Delivered multiple projects using Next.js, React, Figma, and Tailwind while also driving brand growth through strategic content (1.1M+ IG reach, TikTok 100K+ engagement, YouTube monetized).',
-    icon: '/assets/asterix.svg',
+    icon: '/assets/logo-asterix.jpg',
     animation: 'victory',
   },
   {
