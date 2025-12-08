@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Globe from 'react-globe.gl';
 import Button from '../components/Button.jsx';
 import { useMediaQuery } from 'react-responsive';
+import FadeIn from '../components/FadeIn.jsx';
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false);
@@ -20,7 +21,7 @@ const About = () => {
   return (
     <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <div className="col-span-1 xl:row-span-3">
+        <FadeIn className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
               src="/assets/grid1.jfif"
@@ -38,9 +39,9 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </FadeIn>
 
-        <div className="col-span-1 xl:row-span-3">
+        <FadeIn className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
               src="/assets/grid2.png"
@@ -58,9 +59,9 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </FadeIn>
 
-        <div className="col-span-1 xl:row-span-4">
+        <FadeIn className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
               <Globe
@@ -95,8 +96,9 @@ const About = () => {
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
-        </div>
-        <div className="xl:col-span-2 xl:row-span-4 md:col-span-1">
+        </FadeIn>
+        
+        <FadeIn className="xl:col-span-2 xl:row-span-4 md:col-span-1">
           <div className={isMedium ? 'grid-container2' : 'grid-container'}>
             <img
               src="/assets/grid3.png"
@@ -115,12 +117,12 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </FadeIn>
 
         {isMedium ? (
           ''
         ) : (
-          <div className="xl:col-span-1 xl:row-span-3 md:col-span-1">
+          <FadeIn className="xl:col-span-1 xl:row-span-3 md:col-span-1">
             <div className="grid-container">
               <img
                 src="/assets/grid4.png"
@@ -143,7 +145,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         )}
       </div>
     </section>

@@ -9,6 +9,7 @@ const Clients = lazy(() => import("./sections/Clients.jsx"));
 const Contact = lazy(() => import("./sections/Contact.jsx"));
 const Footer = lazy(() => import("./sections/Footer.jsx"));
 const Experience = lazy(() => import("./sections/Experience.jsx"));
+const Awards = lazy(() => import("./sections/Awards.jsx"));
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                 <Projects />
                 <Clients />
                 <Experience/>
+                <Awards />
                 <Contact/>
                 <Footer/>
             </Suspense>

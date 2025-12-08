@@ -388,3 +388,15 @@ export const workExperiences = [
     animation: 'salute',
   },
 ];
+
+export const awards = [
+  {
+    id: 1,
+    title: '2nd Place – UI/UX Design Competition (MIA 2025)',
+    issuer: 'Multimedia In Action — Sponsored by LinkAja',
+    date: 'Nov 2025',
+    description:
+      'Awarded 2nd Place in the UI/UX Design Competition at Multimedia In Action (MIA) 2025, sponsored by LinkAja and held at UPN “Veteran” Jakarta. Served as UI/UX Designer for Team ISC Sans, delivering LinkAja Kas — a user-centered solution that simplifies and improves transparency in group financial management. Selected as Top 3 out of 200+ teams nationwide, highlighting strong design thinking, research-driven decision-making, and impactful digital innovation.',
+    icon: '/assets/star.png',
+  },
+];
