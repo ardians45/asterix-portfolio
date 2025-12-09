@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { PerspectiveCamera, Ring, OrbitControls } from '@react-three/drei';
+import { PerspectiveCamera, OrbitControls } from '@react-three/drei';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from '../constants/index.js';
@@ -34,7 +34,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <div className="block mt-2">
-            <TrueFocus 
+            <TrueFocus
               sentence="Where Design Meets Engineering"
               manualMode={false}
               blurAmount={5}
@@ -52,9 +52,16 @@ const Hero = () => {
 
         <div className="w-full h-full absolute inset-0">
           {/*<Leva/>*/}
-          <Canvas className="w-full h-full" dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+          <Canvas
+            className="w-full h-full"
+            dpr={[1, 2]}
+            gl={{ preserveDrawingBuffer: true }}
+          >
             <Suspense fallback={<CanvasLoader />}>
-              <PerspectiveCamera makeDefault position={[0, 0, 20]} />
+              <PerspectiveCamera
+                makeDefault
+                position={isMobile ? [0, 10, 20] : [0, 0, 20]}
+              />
               <NewModel
                 position={isMobile ? [0, -2, 0] : [0, -2, 0]}
                 rotation={[0, -Math.PI / 2, 0]}

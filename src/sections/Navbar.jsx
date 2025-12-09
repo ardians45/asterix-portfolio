@@ -1,6 +1,7 @@
 import React from 'react';
 import { navLinks } from '../constants/index.js';
 import { Link } from 'react-scroll';
+import GooeyNav from '../components/GooeyNav.jsx';
 
 const NavItems = () => {
   return (
@@ -28,6 +29,11 @@ const Navbar = () => {
     setIsOpen((prev) => !prev);
   };
 
+  const gooeyItems = navLinks.map(({ name, href }) => ({
+    label: name,
+    href: name === 'Home' ? 'home' : href,
+  }));
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
       <div className="max-w-7xl mx-auto">
@@ -51,12 +57,31 @@ const Navbar = () => {
             />
           </button>
           <nav className="sm:flex hidden">
-            <NavItems />
+            <GooeyNav
+              items={gooeyItems}
+              particleCount={15}
+              particleDistances={[90, 10]}
+              particleR={100}
+              initialActiveIndex={0}
+              animationTime={600}
+              timeVariance={300}
+              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+            />
           </nav>
         </div>
         <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
-          <nav className="p-5">
-            <NavItems />
+          <nav>
+            <GooeyNav
+              items={gooeyItems}
+              particleCount={8}
+              particleDistances={[25, 4]}
+              particleR={30}
+              initialActiveIndex={0}
+              animationTime={600}
+              timeVariance={300}
+              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+              isMobileView={true}
+            />
           </nav>
         </div>
       </div>
