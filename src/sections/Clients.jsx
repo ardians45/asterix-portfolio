@@ -1,44 +1,33 @@
 import { clientReviews } from '../constants/index.js';
+import MagicBento from '../components/MagicBento.jsx';
 
 const Clients = () => {
+  const bentoItems = clientReviews.map((item) => ({
+    title: item.name,
+    description: item.review,
+    label: item.position,
+    stars: 5,
+    color: '#1C1C21', // Dark background matching existing theme
+  }));
+
   return (
     <section className="c-space my-20">
       <h3 className="head-text">Hear from My Clients</h3>
 
-      <div className="client-container">
-        {clientReviews.map((item) => (
-          <div
-            key={`review-${item.id}`}
-            className="client-review transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-lg hover:z-10"
-          >
-            <div>
-              <p className="text-white-800 font-light">{item.review}</p>
-
-              <div className="client-content">
-                <div className="flex gap-3">
-                  {/* <img src={item.img} alt="reviewer" className="w-12 h-12 rounded-full" /> */}
-                  <div className="flex flex-col">
-                    <p className="font-semibold text-white-800">{item.name}</p>
-                    <p className=" text-white-500 md:text-base text-sm font-medium">
-                      {item.position}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex self-end items-center gap-2">
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <img
-                      key={index}
-                      src="/assets/star.png"
-                      alt="star"
-                      className="w-5 h-5"
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+      <div className="w-full mt-12">
+        <MagicBento 
+          items={bentoItems}
+          textAutoHide={false} // Disable auto hide for better readability of reviews
+          enableStars={true}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={true}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={12}
+          glowColor="132, 0, 255"
+        />
       </div>
     </section>
   );

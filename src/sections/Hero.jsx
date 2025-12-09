@@ -12,6 +12,7 @@ import HeroCamera from '../components/HeroCamera.jsx';
 import Button from '../components/Button.jsx';
 import { Link } from 'react-scroll';
 import NewModel from '../components/NewModel.jsx';
+import TrueFocus from '../components/TrueFocus.jsx';
 
 const Hero = () => {
   const isSmall = useMediaQuery({ query: '(max-width: 440px)' });
@@ -32,9 +33,16 @@ const Hero = () => {
           </span>
 
           {/* Subheadline */}
-          <span className="block text-xl sm:text-3xl font-medium text-gray-300">
-            Where Design Meets Engineering
-          </span>
+          <div className="block mt-2">
+            <TrueFocus 
+              sentence="Where Design Meets Engineering"
+              manualMode={false}
+              blurAmount={5}
+              borderColor="#9ca3af"
+              animationDuration={1}
+              pauseBetweenAnimations={1}
+            />
+          </div>
 
           {/* Author Tag */}
           <span className="block mt-6 text-sm font-mono text-gray-500 tracking-widest uppercase">
