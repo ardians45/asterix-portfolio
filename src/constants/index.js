@@ -24,27 +24,29 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Rizky Pratama',
-    position: 'Founder • GOGO Grocery',
-    img: 'assets/review1.png',
+    name: 'Owner SRLaundry',
+    position: 'Business Owner • SRLaundry',
+    img: 'assets/logo-round.png',
     review:
-      'Ardian mampu menerjemahkan ide kami menjadi desain yang modern, mudah digunakan, dan sesuai kebutuhan pasar. Komunikasi jelas dan pengerjaan tepat waktu. Sangat direkomendasikan!',
+      'Kerjanya rapi dan sesuai sama yang kami butuhin. Komunikasinya enak, prosesnya jelas, dan hasil akhirnya bikin tampilan bisnis kami jadi lebih profesional.',
   },
+
   {
     id: 2,
-    name: 'Sarah Anggraeni',
-    position: 'Owner • Cactastic Marketplace',
+    name: 'Satria',
+    position: 'Lead Developer • Sistem Akademik Rapor',
     img: 'assets/review2.png',
     review:
-      'Desain UI/UX yang dibuat Ardian sangat detail dan estetik. Ia juga memberikan saran strategis terkait user flow sehingga aplikasi lebih mudah dipahami pengguna.',
+      'Puas banget kerja bareng Ardian. Dia nggak cuma sekadar desain, tapi juga ngasih masukan logis soal user flow sistem rapor ini biar lebih efektif. Hasilnya melampaui ekspektasi, proses revisinya juga cepet dan nggak bertele-tele.',
   },
+
   {
     id: 3,
-    name: 'Michael Santoso',
-    position: 'Project Lead • Mending Rental',
+    name: 'Rey',
+    position: 'Business Partner • Mending Rental',
     img: 'assets/review3.png',
     review:
-      'Pengembangan desain sangat memuaskan. Ardian proaktif dalam berdiskusi dan memberikan solusi ketika menemukan tantangan dalam project. Hasil akhir sesuai ekspektasi.',
+      'Puas banget sama hasil kerja Ardian. Sekarang customer kami nggak bingung lagi pas mau pilih-pilih kostum karena navigasinya jauh lebih simpel. Prosesnya transparan dan Ardian juga sering kasih masukan yang oke dari sisi desain.',
   },
   {
     id: 4,
@@ -169,10 +171,10 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Mending Rental – Motorcycle Rental Platform',
-    desc: 'A web-based platform that simplifies motorcycle rental by providing a structured booking flow, user dashboard, and streamlined rental process.',
+    title: 'Mending Rental – Costume Rental Platform',
+    desc: 'A web-based platform designed to simplify costume rentals, featuring an organized catalog, seamless booking management, and an intuitive user dashboard.',
     subdesc:
-      'Focused on improving usability with clear step-by-step booking, responsive layout, and a clean dashboard experience.',
+      'Focused on UI/UX optimization with a clear size-selection flow, responsive layout, and an aesthetic catalog experience tailored for cosplayers and performers.',
     href: '#',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/project-logo3.png',
@@ -379,6 +381,16 @@ export const workExperiences = [
   },
   {
     id: 3,
+    name: 'SIAPkerja',
+    pos: 'Administrative & Office Support Trainee',
+    duration: 'May 2021 - Jul 2021',
+    title:
+      'Completed a 280-hour competency-based training program (Practical Office Advanced II) and achieved professional certification. Gained hands-on experience in office administration, document management, data entry, and report preparation using standard office applications in a structured work environment.',
+    icon: '/assets/siapkerja.png',
+    animation: 'idle',
+  },
+  {
+    id: 4,
     name: 'PT. Kusuma Kreasi Utama',
     pos: 'Digital Content & Event Organizer',
     duration: 'Feb 2020 - Mar 2020',
